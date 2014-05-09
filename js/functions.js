@@ -5,6 +5,8 @@ $(document).ready(function() {
     // options
     itemSelector : '.post',
     // options...
+    isFitWidth: true,
+
   isAnimated: true,
   animationOptions: {
     duration: 400,

@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
   
    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/light.css"/> 
-
+   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
 
     <?php  $options = get_option('plugin_options');
@@ -37,17 +37,17 @@
 <div id="wrap">
   <div id="header">
       
-<div id="logo">
-          <a href="<?php echo home_url( '/' ); ?>"  title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-            
-                 <?php if ($gridly_logo != '') {?>
-                   <img src="<?php echo $gridly_logo; ?>" alt="<?php bloginfo('sitename'); ?>">
-                 <?php } else { ?>
-                       <img src="<?php echo get_template_directory_uri(); ?>/images/light/gridgridlogo.svg" alt="<?php bloginfo('sitename'); ?>">
-                 <?php } ?>
-            </a>
-            
-       </div>
+  <div id="logo">
+            <a href="<?php echo home_url( '/' ); ?>"  title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+              
+                   <?php if ($gridly_logo != '') {?>
+                     <img src="<?php echo $gridly_logo; ?>" alt="<?php bloginfo('sitename'); ?>">
+                   <?php } else { ?>
+                         <img src="<?php echo get_template_directory_uri(); ?>/images/light/gridgridlogo.svg" alt="<?php bloginfo('sitename'); ?>">
+                   <?php } ?>
+              </a>
+              
+  </div>
         
                 
        <?php if ( has_nav_menu( 'main_nav' ) ) { ?>
@@ -57,6 +57,7 @@
      <?php } ?>
 
    </div>
+
 <!-- // header -->           
 
 
